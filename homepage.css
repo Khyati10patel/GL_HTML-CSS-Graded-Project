@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+.header{
+    color: white;
+    padding: 1rem;
+    background-color: darkgray;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 580;
+}
+.navbar{
+    color: white;
+    padding: 0;
+    background-color: gray;
+    font-size: 1rem;
+    font: 200;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li:hover{
+    background-color: rgb(68, 67, 67);
+}
+ul li a{
+    display: block;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+ul li ul.dropdown li{
+    height: 50px;
+    width: 100px;
+    display: block;
+}
+ul li ul.dropdown li:hover{
+    background-color: white;
+}
+ul li ul.dropdown li a{
+    text-align: left;
+    font-size: 15px;
+    padding-left: 0;
+    color: rgb(34, 116, 224);
+}
+ul li ul.dropdown{
+    width: 150px;
+    font-size: 60px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li:hover ul.dropdown{
+    background-color: white;
+    display: block;
+}
+
+.image-animation{
+    border: 3px solid blue;
+    height : 350px;
+    width : 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-animation img{
+    width: 100%;
+    height : 100%;
+    position : absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+}
+
+.image-animation img:first-child{
+    opacity: 1;
+}
+
+@keyframes animation-image {
+    0%{
+        opacity : 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.image-animation img:nth-child(2){
+    animation: animation-image 25s infinite;
+}
+
+.image-animation img:nth-child(3){
+    animation: animation-image 25s infinite 5s;
+}
+.image-animation img:nth-child(3){
+    animation: animation-image 25s infinite 10s;
+}
+.image-animation img:nth-child(4){
+    animation: animation-image 25s infinite 15s;
+}
+.image-animation img:nth-child(5){
+    animation: animation-image 25s infinite 20s;
+}
+
+.main{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.main h1{
+    padding-right: 10px;
+}
+.covid-products{
+    display: flex;
+    flex-direction: row;
+}
+.covid-products div{
+    background-color: skyblue;
+    width: 20%;
+    margin: 10px;
+    position: relative;
+}
+.covid-products div button{
+    width: 100%;
+    padding: 2px;
+    color: blue;
+    background-color: skyblue;
+}
+
+.covid-products div:hover{
+   transform: scale(1.1);
+}
+
+.covid-products div img{
+    margin: 20px;
+}
+
+
+.diabetics-products{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.diabetics-products div{
+    background-color: skyblue;
+    width: 20%;
+    margin: 10px;
+    position: relative;
+}
+
+.diabetics-products div img{
+    margin: 20px;
+    width: 85%;
+}
+
+.diabetics-products div:hover{
+    transform: scale(1.1);
+}
+
+.diabetics-products div button{
+    width: 100%;
+    padding: 2px;
+    color: blue;
+    background-color: skyblue;
+}
+
+
+.cookie img{
+    height: 65%;
+}
+
+.essentials img{
+    width: 85%;
+    height: 64%;
+}
+.mask img{
+    width: 85%;
+    height: 64%; 
+}
+
+.footer{
+    height: 30px;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    background-color: gray;
+    position: absolute;
+    justify-content: center;
+}

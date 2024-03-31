@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="labform.css">
+    <title>Lab Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form col-md-6">
+            <div class="contact-details">
+                <label for="contact-details"><p>1. Your Contact details</p></label>
+                <div class="contact-details-input">
+                    <input type="text" name="" id="contact-details full-name" placeholder="Full name">
+                    <input type="text" name="" id="conatct-details patient-id" placeholder="Patient ID if exists">
+                    <input type="text" name="" id="contact-details contact-no" placeholder="Contact number" size="10">
+                    <input type="email" name="" id="conatct-details email-id" placeholder="Email">
+                </div>
+            </div>
+            <div class="address">
+                <label for="address"><p>2. Address</p></label>
+                <div class="address-input">
+                    <input type="text" id="address house-no" placeholder="House Number">
+                    <input type="text" id="address street" placeholder="Street">
+                    <input type="text" name="" id="address area" placeholder="Area">
+                </div>
+                <select name="district" id="address district">
+                    <option value="">Choose Your District</option>
+                    <option value="bengaluru">Bengaluru</option>
+                    <option value="devangere">Devangere</option>
+                    <option value="bidadi">Bidadi</option>
+                    <option value="mysore">Mysore</option>
+                </select>
+            </div>
+            <div class="testtype">
+                <label for="test-type"><p>3. Choose test type</p></label>
+                <p>&lpar;Choose one without fail&rpar;</p>
+                <div class="testtype-input">
+                    <div class="input">
+                        <input type="checkbox" name="" id="test-type">
+                        <label>CBC</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" name="" id="test-type">
+                        <label>Urine Profile</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" name="" id="test-type">
+                        <label>Lipid Profile</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" name="" id="test-type">
+                        <label>Vitamin Tests</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" name="" id="test-type">
+                        <label>Glucose Levels</label>
+                    </div>
+                </div>
+            </div>
+            <div class="report">
+                <label for="report"><p>4. Do you want a hard copy of the report?</p></label>
+                <div class="report-input">
+                    <input type="radio" name="report" id="report" value="Yes">
+                    <label for="">Yes</label>
+                    <input type="radio" name="report" id="report">
+                    <label for="">No</label>
+                </div>
+            </div>
+            <div class="date-and-time">
+                <label for=""><p>5. Select a comfortable date and time</p></label>
+                <br>
+                <div class="date-and-time-input">
+                    <input type="date" name="" id="" required>
+                    <input type="time" name="" id="" required>
+                </div>
+            </div>
+        </div>
+        <div class="image-fixed">
+            <img src="images/lab-test.jpg" alt="">
+        </div>
+    </div>
+    <div class="container2">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+</body>
+</html>

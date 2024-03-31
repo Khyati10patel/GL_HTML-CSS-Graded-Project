@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+@media screen and(min-width: 800px) {
+    body{
+        width: 100%;
+    }
+    
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;    
+}
+
+.container{
+    height: 440px;
+    width: 80%;
+    margin-top: 52px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    left: 10%;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.form{
+    
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form:last-child{
+    margin-bottom: 20px;
+}
+
+.contact-details-input, .address-input{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-details-input *, .address-input *, #address, .test-type *{
+    padding: 5px;
+    margin: 5px;
+} 
+
+.report{
+    margin: 5px;
+    padding: 1px;
+}
+ 
+.report input{
+    margin-left: 10%;
+    padding: 1px;
+}
+.date-and-time{
+    margin: 5px;
+    padding: 1px;
+}
+.date-and-time input{
+    margin-left: 10%;
+    padding: 1px;
+}
+input[type=text],input[type=email]{
+    border: none;
+    overflow-x: hidden;
+    border-bottom: 1px solid gray;
+}
+
+p{
+    font-size: large;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-details, .address, .test-type, .report, .date-and-time{
+    margin: 10px 0 10px 0;
+}
+
+.address #address{
+    padding:10px;
+}
+
+.test-type-input, .date-and-time-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.date-and-time-input{
+    width:40%;
+}
+
+.image-fixed{
+    position: sticky;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    margin-left:0px;
+}
+.image-fixed img{
+    margin-left: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container2{
+    position: absolute;
+    justify-content: center;
+    top: 90%;
+    left: 45%;
+}
+.container2 input{
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 13%;
+}
+
+input[type=date],input[type=time]{
+    border: none;
+    border-bottom: 1px solid gray;
+}
